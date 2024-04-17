@@ -1,55 +1,85 @@
 {
-    "media": [
+    "posts":[
         {
-        "postId": 1,
-        "id": 1,
-        "name": "id labore ex et quam laborum",
-        "email": "Eliseo@gardner.biz",
-        "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+            "blogs_id":"1",
+            "image":"/img/image1.png",
+            "type":"Lifestyle",
+            "name":"Niek Bove",
+            "title":"Eat Right For Your Exercise Regime",
+            "description":"Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…"
         },
         {
-        "postId": 1,
-        "id": 2,
-        "name": "quo vero reiciendis velit similique earum",
-        "email": "Jayne_Kuhic@sydney.com",
-        "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+            "blogs_id":"2",
+            "image":"img/image1.png",
+            "type":"Lifestyle",
+            "name":"Niek Bove",
+            "title":"The Look: Perfect Balance",
+            "description":"Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…"
         },
         {
-        "postId": 1,
-        "id": 3,
-        "name": "odio adipisci rerum aut animi",
-        "email": "Nikita@garfield.biz",
-        "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+            "blogs_id":"3",
+            "image":"",
+            "type":"style",
+            "name":"Lady Charlton",
+            "title":"Fun Things to Do in Rome",
+            "description":"quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
         },
+
         {
-        "postId": 1,
-        "id": 4,
-        "name": "alias odio sit",
-        "email": "Lew@alysha.tv",
-        "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+            "blogs_id":"4",
+            "image":"",
+            "type":"style",
+            "name":"John Smith",
+            "title":"24 Colorful Ceilings That Add Unexpected Contrast to Any Room",
+            "description":"harum non quasi et ratione tempore iure ex voluptates in ratione harum architecto fugit inventore cupiditate\nvoluptates magni quo et"
         },
+
         {
-        "postId": 1,
-        "id": 5,
-        "name": "vero eaque aliquid doloribus et culpa",
-        "email": "Hayden@althea.biz",
-        "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
-        }
-    ],
-    "users":[
-        {
-            "id":1,
-            "name":"Karen"
+            "blogs_id":"5",
+            "image":"",
+            "type":"Lifestyle",
+            "name":"Aidan Teresa",
+            "title":"9 New Songs to Heat Up Your Fall Playlist",
+            "description":"eum sed dolores ipsam sint possimus debitis occaecati debitis qui qui etut placeat enim earum aut odit facilis consequatur suscipit necessitatibus rerum sed inventore temporibus consequatur"
         },
+
         {
-            "id":2,
-            "name":"Albert"
+            "blogs_id":"6",
+            "image":"",
+            "type":"Events",
+            "name":"Adrian Luisa",
+            "title":"What You Need on Your Bedside Table",
+            "description":"debitis eius sed quibusdam non quis consectetur vitae impedit ut qui consequatur sed aut in quidem sit nostrum et maiores adipisci atque quaerat voluptatem adipisci repudiandae"
         },
+
         {
-            "id":3,
-            "name":"Vahag"
+            "blogs_id":"7",
+            "image":"",
+            "type":"Travel",
+            "name":"Mike James",
+            "title":"When Two Wheels Are Better Than Four",
+            "description":"animi esse sit aut sit nesciunt assumenda eum voluptasquia voluptatibus provident quia necessitatibus earerum repudiandae quia voluptatem delectus fugit aut id quiaratione optio eos iusto veniam iure"
+        },
+
+        {
+            "blogs_id":"8",
+            "image":"",
+            "type":"Travel",
+            "name":"Given Fitzgerald",
+            "title":"26 Living Room Ideas from the Homes of Top Designers",
+            "description":"eum sed dolores ipsam sint possimus debitis occaecati debitis qui qui etput placeat enim earum aut odit facilis consequatur suscipit necessitatibus rerum sed inventore temporibus consequatur"
+        },
+
+        {
+            "blogs_id":"9",
+            "image":"",
+            "type":"Music",
+            "name":"Taylor Walker",
+            "title":"What Makes Your City’s Style Unique",
+            "description":"voluptatem assumenda ut qui ut cupiditate aut impedit veniam occaecati nemo illum voluptatem laudantium molestiae beatae rerum ea iure soluta nostrum eligendi et voluptate"
         }
     ]
+
 
 
 }
