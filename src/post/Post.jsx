@@ -4,29 +4,36 @@ import { useEffect, useState } from 'react';
 
 export default function Post(){
     const [posts, setPosts] = useState(null)
+    const [error, setError] = useState(null);
 
-    const handleDelete = (id) => {
-       const newPosts = posts.filter(user => user.id !== id)
-       setPosts(newPosts);
+    // const handleDelete = (id) => {
+    //    const newPosts = posts.filter(user => user.id !== id)
+    //    setPosts(newPosts);
 
-   
-    }
+    // }
 
     useEffect(() => {
         fetch('http://localhost:3300/posts')
           .then(res => {
-              return res.json()
+              if (!res.ok) {
+                throw new Error('Failed to fetch posts');
+              }
+
+              return res.json();
           })
           .then((data) => {
+            console.log('Posts from server:', data);
             setPosts(data)
           })
+          .catch(error => {
+            console.error('Error fetching posts:', error);
+            setError(error.message);
+        });
     }, [])
-
-      console.log(posts)
 
     return (
         <div>
-            <h1>Post Component</h1>
+            {error && <p>Error: {error}</p>}
             {posts && <PostList posts = {posts} />}
         </div>
     )

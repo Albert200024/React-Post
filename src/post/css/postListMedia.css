@@ -1,0 +1,106 @@
+@media screen and (max-width: 1260px) and (min-width: 1440px){
+    .textBlockTitle {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1260px) and (min-width: 1440px){
+    .textBlockTitle {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1259px) and (min-width: 1024px){
+    .textBlockTitle {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .textBlockInfo span {
+      font-size: 11px;
+    }
+
+    .textBlockInfo {
+        column-gap: 8px;
+    }
+
+    .textBlockInfoItem {
+        column-gap: 3px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px){
+    .post {
+        width: 47%;
+    }
+
+    .posts-list {
+        row-gap: 40px;
+        column-gap: 35px;
+        justify-content: center;
+        padding-bottom: 105px;
+    }
+
+    .textBlockTitle {
+        font-size: 21px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width:576px){
+    .post {
+        width: 45%;
+    }
+
+    .textBlockTitle {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+
+    .textBlockInfoItem, .textBlockInfo span  {
+        font-size: 11px;
+    }
+
+
+    .textBlockDesciption {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .textBlockInfo {
+       flex-direction: column;
+       row-gap: 5px;
+       align-items: flex-start;
+    }
+
+    .posts-list {
+        justify-content: center;
+        row-gap: 40px;
+        column-gap: 35px;
+        padding-bottom: 85px
+    }
+
+    
+}
+
+@media screen and (max-width: 575px) and (min-width: 290px){
+    .post {
+      width: 100% ; 
+    }
+
+  
+    .posts-list {
+        padding-top: 10px;
+      padding-bottom: 85px;
+    }
+
+    .containerWidth {
+        max-width: 90%;
+    }
+  }
+
+  
+

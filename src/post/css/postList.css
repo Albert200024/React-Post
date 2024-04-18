@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.posts-list {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 55px;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    padding-bottom: 170px;
+}
+
+.post {
+    width: 30%;
+}
+
+.post .imageBlock img {
+    width: 100%;
+    height: 100%;
+}
+
+.textBlockType {
+    font-family: "Roboto", sans-serif;
+    color: #EB0028;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: left;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.textBlockTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
+
+.textBlockInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 16px;
+}
+
+.textBlockInfo span {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;    
+}
+
+.textBlockInfoItem {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    color: #9B9B9B;
+}
+
+.textBlockInfoItemTochka {
+    width: 3px;
+    height: 3px;
+    background: #D7D7D7;
+}
+
+.textBlockDesciption{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #929292;
+}
