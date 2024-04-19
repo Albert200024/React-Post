@@ -1,4 +1,5 @@
 {
+  "homepage":"https://albert200024.github.io/post-react",
   "name": "task1",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,9 @@
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start\"",
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build ",
+    "json-server": "json-server --watch server/db.json -p 3300",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
