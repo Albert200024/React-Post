@@ -6,67 +6,38 @@ import logo from "../img/logo.png"
 import downSlaq from "../img/chevron-down.png"
 import mobileMenuBtn from "../img/mobileMenuBtn.png"
 import close from "../img/close.png"
-import { A } from "@angular/cdk/keycodes"
+import MobileMenuAccardion from "./MobileMenuAccardion"
 
-
-const AccordionItem = (props) => {
-    const contentEl = useRef();
-    const { handleToggle, active, faq } = props;
-    const { header, id, text } = faq;
-
-    return (
-        <div className="menuListItemBlock">
-            <div className="menuListItemBlockHeader">
-                <div className={`accardionToggle menuToggle  ${active === id ? 'active' : ''}`} onClick={() => handleToggle(id)}>
-                    <h5 className="menuItemTitle">{header}</h5>
-                    <div className="menuItemIqon">
-                        <img src={downSlaq} alt="" />
-                    </div>
-                </div>
-            </div>
-            <div ref={contentEl} className={`rc-collapse ${active === id ? 'show' : ''}`} style={
-                active === id
-                    ? { height: contentEl.current.scrollHeight }
-                    : { height: "0px" }
-            }>
-                <div className="rc-accordion-body">
-                    <p className='mb-0'>{text}</p>
-
-                    {
-                      text.map(item => {
-                        return <a>{item}</a>
-                      })
-                       
-                    }
-                </div>
-            </div>
-        </div>
-    )
-}
 
 export default function Header(){
     const [bool, setBool] = useState(false)
     const [active, setActive] = useState(null);
+    
     const faqs = [
         {
             id: 1,
-            header: "1",
-            text: ["1", "2", "3"]
+            header: "Demos",
+            text: ["Demos Header", "Demos Layout", "Demos Buttons", "Demos Post", "Demos see"]
         },
         {
             id: 2,
-            header: "Where does it come from?",
-            text: ["1", "2", "3"]
+            header: "Post",
+            text: ["Post Header", "Post Layout", "Share Buttons", "Gallery Post", "Video Post"]
         },
         {
             id: 3,
-            header: "Why do we use it?",
-            text: ["1", "2", "3"]
+            header: "Features",
+            text: ["Features Header", "Features Layout", "Features Buttons", "Features Post", "Features See"]
         },
         {
             id: 4,
-            header: "Where can I get some?",
-            text: ["1", "2", "3"]
+            header: "Categories",
+            text: ["Categories Header", "Categories Layout", "Categories Buttons", "Categories Post", "Categories See"]
+        },
+        {
+            id: 5,
+            header: "Shop",
+            text: ["Shop Header", "Shop Layout", "Shop Buttons", "Shop Post", "Shop See"]
         }
     ]
 
@@ -304,26 +275,18 @@ export default function Header(){
                     </div>
                     <ul className="mobileMenuList">
                         <li className="borderBottom">
-                             <div className="accardion"> 
+                             <div className="mobileMenuItem "> 
                                  {faqs.map((faq, index) => {
                                         return (
-                                                <AccordionItem key={index} active={active} handleToggle={handleToggle} faq={faq} />
+                                                <MobileMenuAccardion key={index} active={active} handleToggle={handleToggle} faq={faq} />
                                                 )
                                         })
                                    }
                              </div>
-                        </li>
-                        
+                        </li>   
+                        <a href="##" className="buyNowMobile">Buy now</a>      
                     </ul>
               </div>
-
-
-
-
-
-
-
-              
         </div>
     )
 }

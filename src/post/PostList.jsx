@@ -6,7 +6,6 @@ export default function PostList({ posts }) {
     return (
         <div className="posts-list containerWidth">
             {posts.map(post => {
-                console.log('Image URL:', post.image);
                 return (
                     <div className="post" key={post.blogs_id}>
                         <div className='imageBlock'>

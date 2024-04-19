@@ -6,7 +6,6 @@
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 .headerLogoSearchBlockLogo {
@@ -21,7 +20,6 @@
     align-items: center;
     justify-content: flex-end;
 }
-
 
 .headerMobileMenuBlock {
     background-color: white;
@@ -54,19 +52,11 @@
     padding-bottom: 20px;
 }
 
-
 .mobileMenuCloseBtn {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
 
 .mobileHeader {
     display: none;
@@ -90,7 +80,6 @@
     height: 100%;
 }
 
-
 .mobileMenuList {
     padding-left: 20px;
     margin-top: 30px;
@@ -105,22 +94,27 @@
     border-bottom: 1px solid #E9E9E9;
 }
 
-
-
-
-
-/* ============================================================================================ */
+/* =================================== Mobile Menu Accardion ========================================================= */
 .menuListItemBlock:not(:last-child) {
     border-bottom: 1px solid #E9E9E9;
 }
 
 .menuToggle {
     display: flex;
-    padding: 16px;
+    padding-bottom: 16px;
     cursor: pointer;
     align-items: center;
     column-gap: 8px;
     transition: 0.3s;
+}
+
+.m-top{
+    margin-top: 16px;
+}
+
+.mobileMenuListItem {
+    padding: 2px 0;
+    display: block;
 }
 
 .menuToggle.active .menuItemIqon{
@@ -133,28 +127,44 @@
     overflow: hidden;
 }
 
-
-.menuItemTitle{
-    font-weight: 500;
-    font-size: 14px;
-    position: relative;
-    margin-bottom: 0;
-    color: #475F7B;
+.menuItemTitle, .buyNowMobile{
+    color: #000000;
     transition: 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+}
+
+.buyNowMobile {
+    margin-top: 12px;
 }
 
 .menuItemIqon{
-    position: relative;
-    top: 2px;
-    color: #475F7B;
-    transition: 0.35s;
     font-size: 12px;
+    transition: 0.35s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.rc-accordion-body{
-    flex: 1 1 auto;
+.menuListItemBlockBody{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
     min-height: 1px;
-    padding: 15px;
+    margin-bottom: 16px;
+}
+
+.mobileMenuListItem {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+    line-height: 13px;
+    text-align: left;
 }
 
 .rc-collapse{
@@ -163,45 +173,18 @@
     overflow: hidden;
     transition: height 0.35s ease;
 }
+
 .rc-collapse.show{
     height: auto;
 }
 
-
-
-
-
-
-
 /* ================================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .headerMenuBlock {
     border-top: 1px solid #E9E9E9; /* Border on top */
     border-bottom: 1px solid #E9E9E9; 
     display: flex;
     justify-content: center;
-}
-
-.headerMenuBlockMenu {
-   /* padding: 10px 0; */
 }
 
 .menuList {
@@ -215,6 +198,12 @@
 
 .buyNow {
     padding: 15px 0;
+}
+
+.buyNowMobile {
+    /* background-color: red; */
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown {

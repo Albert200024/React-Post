@@ -15,17 +15,16 @@
   }
 }
 
-@media screen and (max-width: 305px){
+@media screen and (max-width: 340px){
     .mobileHeaderBlockLogo {
-       width: 65% !important;
+       width: 55% !important;
         margin: auto;
     } 
-
 
     .mobileMenuCloseBtnBlock a {
         display: block;
 
-        width: 80%;
+        width: 65%;
     }
 
     .mobileMenuCloseBtnBlock a img {

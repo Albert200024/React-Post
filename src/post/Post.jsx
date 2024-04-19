@@ -6,12 +6,6 @@ export default function Post(){
     const [posts, setPosts] = useState(null)
     const [error, setError] = useState(null);
 
-    // const handleDelete = (id) => {
-    //    const newPosts = posts.filter(user => user.id !== id)
-    //    setPosts(newPosts);
-
-    // }
-
     useEffect(() => {
         fetch('http://localhost:3300/posts')
           .then(res => {
