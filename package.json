@@ -16,8 +16,8 @@
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start\"",
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build ",
+    "predeploy": "npm run build",
+    "deploy": "npm run json-server && npm run build && gh-pages -d build",
     "json-server": "json-server --watch server/db.json -p 3300",
     "build": "react-scripts build",
     "test": "react-scripts test",
