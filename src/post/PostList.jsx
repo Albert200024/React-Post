@@ -3,14 +3,9 @@ import "./css/postList.css"
 import "./css/postListMedia.css"
 import { useAppContext } from '../Context/AppContext';
 
-
-
 export default function PostList({ posts }) {
     const { inputVal } = useAppContext();
 
-    // function 
-    
-    console.log('Input Value:', inputVal);
     return (
         <div className="posts-list containerWidth">
     

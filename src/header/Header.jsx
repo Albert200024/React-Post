@@ -102,7 +102,7 @@ export default function Header(){
                  </div>
                  <div className={`headerSearchInputBlock ${activeSearch ? "headerSearchInputBlockActive" : ""}`}>
                       <div className="field">
-                         <input type="text" placeholder="Search by type..." />
+                         <input type="text" value={inputVal} placeholder="Search by type..." onChange={(e) => inputChange(e)} />
                           <div className="line"></div>
                       </div>
                   </div>
