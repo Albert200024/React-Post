@@ -1,12 +1,12 @@
 import { useState, useRef } from "react"
 import downSlaq from "../img/chevron-down.png"
 
-export default function MobileMenuAccardion ({ handleToggle, active, faq }) {
+export default function MobileMenuAccardion ({ accordionKey, handleToggle, active, faq }) {
     const contentEl = useRef();
     const { header, id, text } = faq;
 
     return (
-        <div className="menuListItemBlock m-top">
+        <div className="menuListItemBlock m-top" key={accordionKey}>
             <div className="menuListItemBlockHeader">
                 <div className={`menuToggle  ${active === id ? 'active' : ''}`} onClick={() => handleToggle(id)}>
                     <h5 className="menuItemTitle">{header}</h5>
@@ -21,11 +21,9 @@ export default function MobileMenuAccardion ({ handleToggle, active, faq }) {
                     : { height: "0px" }
             }>
                 <div className=" menuListItemBlockBody">
-                    {
-                      text.map(item => {
-                        return <a href="##" className="mobileMenuListItem" >{item}</a>
-                      })
-                    }
+                    {text.map((item, index) => (
+                        <a href="##" className="mobileMenuListItem" key={index}>{item}</a>
+                    ))}
                 </div>
             </div>
         </div>

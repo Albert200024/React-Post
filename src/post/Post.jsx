@@ -1,7 +1,6 @@
 import PostList from "./PostList";
 import { useEffect, useState } from 'react';
 
-
 export default function Post(){
     const [posts, setPosts] = useState(null)
     const [error, setError] = useState(null);
@@ -16,14 +15,14 @@ export default function Post(){
               return res.json();
           })
           .then((data) => {
-            console.log('Posts from server:', data);
             setPosts(data)
           })
           .catch(error => {
-            console.error('Error fetching posts:', error);
             setError(error.message);
         });
     }, [])
+
+    
 
     return (
         <div>

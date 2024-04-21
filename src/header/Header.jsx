@@ -7,11 +7,17 @@ import downSlaq from "../img/chevron-down.png"
 import mobileMenuBtn from "../img/mobileMenuBtn.png"
 import close from "../img/close.png"
 import MobileMenuAccardion from "./MobileMenuAccardion"
+import { useAppContext } from '../Context/AppContext';
+
 
 
 export default function Header(){
     const [bool, setBool] = useState(false)
     const [active, setActive] = useState(null);
+    const [activeSearch, setActiveSearch] = useState(false)
+    const [searcInpVal, setSearcInpVal] = useState("")
+    const { inputVal, handleInputValueChange } = useAppContext(); // Destructure inputVal from context
+
     
     const faqs = [
         {
@@ -52,7 +58,16 @@ export default function Header(){
     function handleChange(){
         setBool(!bool)
     }
-    
+
+    const inputChange = (e) => {
+        const value = e.target.value;
+        handleInputValueChange(value); // Call handleInputValueChange to update inputVal in the context
+    };
+
+    const changeActiveSearch = () => {
+        setActiveSearch(!activeSearch);
+    };
+
     return (
         <div className="Header ">
               <div className="headerLogoSearchBlock containerWidth">
@@ -62,7 +77,13 @@ export default function Header(){
                      </a>
                   </div>
                   <div className="headerLogoSearchBlockSearch">
-                      <a href="##"><img src={searchIqon}/></a>
+                       <a href="##" onClick={changeActiveSearch}><img src={searchIqon}/></a>
+                  </div>
+                  <div className={`headerSearchInputBlock ${activeSearch ? "headerSearchInputBlockActive" : ""}`}>
+                      <div className="field">
+                          <input type="text" value = {inputVal} placeholder="Search by type..." onChange={(e) => inputChange(e)}/>
+                          <div className="line"></div>
+                      </div>
                   </div>
               </div>
               <div className="mobileHeader containerWidth">
@@ -76,9 +97,15 @@ export default function Header(){
                         <a href=""><img src={logo} alt="" /></a>
                      </div>
                      <div className="mobileHeaderBlockSearch">
-                        <a href="##"><img src={searchIqon}/></a>
+                        <a href="##" onClick={changeActiveSearch}><img src={searchIqon}/></a>
                      </div>
                  </div>
+                 <div className={`headerSearchInputBlock ${activeSearch ? "headerSearchInputBlockActive" : ""}`}>
+                      <div className="field">
+                         <input type="text" placeholder="Search by type..." />
+                          <div className="line"></div>
+                      </div>
+                  </div>
               </div>
               <div className="headerMenuBlock">
                    <div className="headerMenuBlockMenu ">
@@ -276,7 +303,7 @@ export default function Header(){
                     <ul className="mobileMenuList">
                         <li className="borderBottom">
                              <div className="mobileMenuItem "> 
-                                 {faqs.map((faq, index) => {
+                                 {faqs.map((faq, index) => {      
                                         return (
                                                 <MobileMenuAccardion key={index} active={active} handleToggle={handleToggle} faq={faq} />
                                                 )

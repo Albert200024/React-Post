@@ -2,7 +2,8 @@
 
 .posts-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 45px;
     row-gap: 55px;
     flex-wrap: wrap;
     padding-top: 45px;
